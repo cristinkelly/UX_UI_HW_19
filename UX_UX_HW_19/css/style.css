@@ -1,0 +1,136 @@
+header {
+  background-color: aliceblue;
+  height: 100px;
+}
+
+.imagecontainer1 {
+vertical-align: top;
+width: auto;
+height: 50px;
+
+}
+
+header li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 5px;
+  color: rgb(4, 12, 20);
+
+}
+
+.logo {
+  vertical-align: top;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+nav {
+  width: 73%;
+  margin-left: auto;
+}
+
+.heroimg {
+  height: 600px;
+  padding: 20px;
+}
+
+.content {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.maintext {
+  text-align: center;
+}
+
+.imagecontainer {
+  width: 500px;
+  height: 300px;
+  margin: 2%;
+  padding: 2%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#button {
+  color: aquamarine;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexcontainer div {
+  width: 33%;
+  margin: 3%;
+  padding: 5px;
+}
+
+.workgrid{
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "image1 text1"
+    "image2 text2";
+}
+
+.workgrid img {
+  /*width:100%;
+  max-width: 250px;*/
+  margin: 0 auto;
+  display: block;
+}
+
+.img1 {
+  grid-area: image1;
+  max-width: 150px;
+}
+.img2 {
+  grid-area: image2;
+  max-width: 250px;
+}
+.img1, .img2, .text1, .text2 {
+  padding: 80px;
+}
+
+.text1 {
+  grid-area: text1;
+}
+.text2 {
+  grid-area: text2;
+}
+
+footer {
+  background-color: aliceblue;
+  padding: 5%;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .mywork {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "title"
+    "image1"
+      "text1"
+      "image2"
+      "text2";
+  }
+}
